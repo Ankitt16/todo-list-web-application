@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	background: rgb(2 , 0 , 36);
+	background: linear-gradient(to right, #040404, #242424, #656565);
+}
+.span{
+	color: #31906E;;
+}
+
+.title{
+    background:linear-gradient(to right, #040404, #242424, #656565);
+    width:100%;
+    height:auto;
+    padding:50px 13%;
+    place-items: center;
+    text-align: center;
+
+}
+.title a{
+    margin-bottom: 2rem;
+    text-align: left;
+    text-decoration: none;
+}
+.title a {
+    color:var(--grey);
+    font-size: 40px;
+    font:Montserrat;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin: 0 10px;
+    padding:0 5px;
+    cursor: pointer;
+    position: relative;
+
+
+}
+.title a::before{
+    content: '';
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.7s ease;
+
+}
+.title a:hover::before{
+    width: 100%;
+}
+.container{
+	position: relative;
+	max-width: 800px;
+	padding: 10px;
+	margin: 50px auto;
+}
+.addTask{
+	width: 100%;
+	display: flex;
+	padding: 10px 0;
+}
+.addTask > input[type="text"]{
+	width: 90%;
+	color: #ed0c0c;
+	border:none;
+	float: left;
+	/*border-bottom: 2px solid #666;*/
+	background: none;
+	padding: 10px;
+	font-size: 20px;
+	outline: none;
+	
+}
+.addTask button{
+	margin: 0 10px;
+	background: #222;
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.notCompleted, .Completed{
+	padding-top: 20px;
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: var(--light);
+	margin-bottom: 1rem;
+}
+h3{
+	font-size: 28px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+ol{
+	list-style: none;
+	counter-reset: my-counter;
+}
+ol li{
+	
+	justify-content: space-between;
+	background-color: var(--darkest);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+	counter-increment: my-counter;
+}
+ol.Completed li{
+	background: var(--darkest);
+}
+ol li::before{
+	content: counter(my-counter);
+	background: #231381;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	display: inline-block;
+	line-height: 2rem;
+	text-align: center;
+	color: #fff;
+	margin-right: 0.5rem;
+}
+li button{
+	float: right;
+	padding: 5px;
+	font-size: 28px;
+	line-height: 28px;
+	margin-right: 15px;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.addTask
+{
+    
+    padding: 10px 10px;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #3EB489 ;
+   
+}
+.fa{
+	color: var(--light);
+}
+
+
